@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин аксессуаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top-console">
+        <button onclick="displayProducts('მთავარი')">მთავარი</button>
+        <button onclick="displayProducts('ბეჭედი')">ბეჭედი</button>
+        <button onclick="displayProducts('ბრასლეტი')">ბრასლეტი</button>
+        <button onclick="displayProducts('საყურე')">საყურე</button>
+        <button onclick="displayProducts('სამკაული')">სამკაული</button>
+        <input type="text" id="search-input" placeholder="ძებნა.." oninput="filterProducts()">
+        <div id="cart">
+            კალათა: <span id="cart-count">0</span> ცალი - <a href="#" onclick="showCart()">ნახვა</a>
+        </div>
+    </div>
+    <section id="content"></section>
+    <div id="pagination"></div>
+    <script src="main.js"></script>
+</body>
+</html>
+

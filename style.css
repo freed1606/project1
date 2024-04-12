@@ -1,0 +1,104 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding-top: 70px;
+    background-image: url('img/back\ jungle.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#top-console {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top-console button, #top-console input[type="text"], #cart a, .product button {
+    margin: 0 5px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#top-console input[type="text"] {
+    flex-grow: 1;
+    max-width: 300px;
+    background-color: white;
+    color: black;
+}
+
+#top-console button:hover, .product button:hover, #cart a:hover {
+    background-color: #f5f5dc;
+    color: white;
+}
+
+#content {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.product:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#pagination {
+    text-align: center;
+    padding: 20px;
+}
+
+#pagination button {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #e4e4e4;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+#cart-total {
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+}
